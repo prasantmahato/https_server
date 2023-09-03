@@ -21,7 +21,9 @@ brew install openssl
 ```bash
 git clone https://github.com/prasantmahato/conf.git
 cd /conf
+
 npm install
+node index.js
 ```
 
 ## Commands to generate Keys
