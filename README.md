@@ -33,10 +33,12 @@ openssl x509 -req -days 365 -in csr.pem -signkey private-key.pem -out certificat
 
 ```
 
-## Command to send POST request
+## Send POST request
 
 ```bash
-curl -X POST https://localhost:443 --insecure -H 'Content-Type: application/json' -d '{ "title":"TEST","body":"HTTPS Server", "id": 1}'
+curl -X POST https://localhost:443 --insecure \
+    -H 'Content-Type: application/x-www-form-urlencoded' \
+    -d 'username=Batman' -d 'password=MEN_ARE_BRAVE'
 ```
 
 - Using --insecure flag as it a locally generated self-signed certificate
