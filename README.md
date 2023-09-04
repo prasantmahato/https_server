@@ -28,12 +28,24 @@ node index.js
 
 ## Commands to generate Keys
 
+- Generate a new private key
+
 ```bash
 openssl genpkey -algorithm RSA -out private-key.pem
-openssl req -new -key private-key.pem -out csr.pem
-openssl x509 -req -days 365 -in csr.pem -signkey private-key.pem -out certificate.pem
-
 ```
+
+- Generate a certificate signing request (CSR) for an existing private key
+
+```bash
+openssl req -new -key private-key.pem -out csr.pem
+```
+
+- Generate a certificate signing request based on an existing certificate
+
+```bash
+openssl x509 -req -days 365 -in csr.pem -signkey private-key.pem -out certificate.pem
+```
+
 
 ## Send POST request
 
