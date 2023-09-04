@@ -19,8 +19,8 @@ brew install openssl
 ## How to install
 
 ```bash
-git clone https://github.com/prasantmahato/conf.git
-cd /conf
+https://github.com/prasantmahato/https_server.git
+cd /https_server
 
 npm install
 node index.js
