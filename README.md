@@ -19,7 +19,7 @@ brew install openssl
 ## How to install
 
 ```bash
-https://github.com/prasantmahato/https_server.git
+git clone https://github.com/prasantmahato/https_server.git
 cd /https_server
 
 npm install
